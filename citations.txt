@@ -1,0 +1,6 @@
+https://pmd.github.io/ - used for understanding PMD bug finder
+https://docs.oracle.com/javase/8/docs/api/overview-summary.html - used to understand Java methods
+https://stackoverflow.com/questions/22836455/jacoco-report-generation-using-maven - used to
+understand how to generate Jacoco report
+https://spring.io/guides/gs/spring-boot - used to understand the spring boot framework more, and the
+ interaction between its components
