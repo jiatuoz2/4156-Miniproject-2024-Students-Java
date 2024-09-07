@@ -5,12 +5,38 @@ Bugs in Course.java
 4. Correct return value for getCourseLocation function - line 56
 5. Correct return value for getInstructorName function - line 61
 6. Correct return logic for isCourseFull function - line 97
+7. MissingOverride: The method 'toString()' is missing an @Override annotation - line 71
 
 Bugs in Department.java
 1. Correct return value for getNumberOfMajors function - line 36
 2. Correct return value for getDepartmentChair function - line 45
 3. Fix dropPersonFromMajor function implementation - line 68
-4. Correct return value for toString function - line 112
+4. Correct return value for toString function - line 113
+5. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 23
+6. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 54
+7. MissingOverride: The method 'toString()' is missing an @Override annotation. - line 104
+8. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 118
+
+Bugs in IndividualProjectApplication.java
+1. LiteralsFirstInComparisons: Position literals first in String comparisons - line 39
+2. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 84
+3. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 94
+
+Bugs in MyFileDatabase.java
+1. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 35
+2. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 44
+3. ReturnEmptyCollectionRatherThanNull: Return an empty collection rather than null. - line 54
+4. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 76
+5. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 100
 
 Bugs in RouteControllerr.java
 1. Correct response status code for retrieveDepartment route - line 46, 49
@@ -18,5 +44,135 @@ Bugs in RouteControllerr.java
 3. Correct number of majors in response body to be positive in getMajorCtFromDept route - line 150
 4. Correct response status code for department not found in getMajorCtFromDept route - line 153
 5. Fix response body to contain the correct course time for findCourseTime Route - line 288
+6. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+element - line 40
+7. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 42
+8. UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+ - line 45
+9. UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+ - line 48
+10. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 72
+11. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 73
+12. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 77
+13. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 79
+14. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 110
+15. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 111
+16. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 117
+17. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 119
+18. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 144
+19. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 148
+20. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 170
+21. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 174
+22. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 199
+23. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 200
+24. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 206
+25. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 208
+26. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 237
+27. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 238
+28. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 244
+29. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 246
+30. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 275
+31. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 276
+32. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 282
+33. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 284
+34. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 308
+35. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 312
+36. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 335
+37. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 339
+38. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 364
+39. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 365
+40. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 371
+41. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 373
+42. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 405
+43. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 406
+44. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 407
+45. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 413
+46. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 415
+47. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 442
+48. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 443
+49. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 444
+50. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 450
+51. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 452
+52. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 480
+53. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 481
+54. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 482
+55. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead -
+line 488
+56. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 490
+57. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 517
+58. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 518
+59. UnnecessaryAnnotationValueElement: Avoid the use of value in annotations when its the only
+ element - line 519
+60. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead -
+line 525
+61. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 527
 
+Bugs in DepartmentUnitTests.java
+1. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 83
 
+Bugs in MyFileDatabaseUnitTests.java
+1. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 37
+2. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 40
+3. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 55
+4. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 58
+
+Bugs in RouteControllerUnitTests.java
+1. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 120
+2. LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead - line
+ 122
