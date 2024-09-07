@@ -1,0 +1,22 @@
+Bugs in Course.java
+1. Initialize enrolledStudentCount with 0 instead of 500 in constructor - line 26
+2. Fix enrollStudent function implementation - line 34
+3. Fix dropStudent function implementation - line 47
+4. Correct return value for getCourseLocation function - line 56
+5. Correct return value for getInstructorName function - line 61
+6. Correct return logic for isCourseFull function - line 97
+
+Bugs in Department.java
+1. Correct return value for getNumberOfMajors function - line 36
+2. Correct return value for getDepartmentChair function - line 45
+3. Fix dropPersonFromMajor function implementation - line 68
+4. Correct return value for toString function - line 112
+
+Bugs in RouteControllerr.java
+1. Correct response status code for retrieveDepartment route - line 46, 49
+2. Correct response status code for retrieveCourse route - line 86
+3. Correct number of majors in response body to be positive in getMajorCtFromDept route - line 150
+4. Correct response status code for department not found in getMajorCtFromDept route - line 153
+5. Fix response body to contain the correct course time for findCourseTime Route - line 288
+
+
