@@ -3,6 +3,7 @@ package dev.coms4156.project.individualproject;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +16,9 @@ import org.springframework.test.context.ContextConfiguration;
 @ContextConfiguration
 public class DepartmentUnitTests {
 
+  /**
+   * This method set up the testDepartment instances for testing.
+   */
   @BeforeAll
   public static void setupDepartmentForTesting() {
     //data for coms dept
@@ -66,8 +70,8 @@ public class DepartmentUnitTests {
 
   @Test
   public void toStringTest() {
-    String expectedResult = "COMS 1004: \nInstructor: Adam Cannon; Location: 417 IAB; Time: " +
-        "11:40-12:55\n";
+    String expectedResult = "COMS 1004: \nInstructor: Adam Cannon; Location: 417 IAB; Time: "
+        + "11:40-12:55\n";
     assertEquals(expectedResult, testDepartment.toString());
     expectedResult = "";
     assertEquals(expectedResult, testDepartment2.toString());
@@ -76,7 +80,7 @@ public class DepartmentUnitTests {
   /** The test course instance used for testing. */
   public static String[] times = {"11:40-12:55", "4:10-5:25", "10:10-11:25", "2:40-3:55"};
   public static String[] locations = {"417 IAB", "309 HAV", "301 URIS"};
-  public static HashMap<String, Course> courses;
+  public static Map<String, Course> courses;
   public static Department testDepartment;
   public static Department testDepartment2;
 }

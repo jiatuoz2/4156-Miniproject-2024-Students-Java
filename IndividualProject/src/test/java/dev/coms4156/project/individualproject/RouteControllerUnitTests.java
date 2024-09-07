@@ -2,7 +2,7 @@ package dev.coms4156.project.individualproject;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.HashMap;
+import java.util.Map;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
- * This class represents the unit test cases for testing the MyFileDatabase class.
+ * This class represents the unit test cases for testing the RouteController file.
  */
 @SpringBootTest
 @ContextConfiguration
@@ -23,9 +23,9 @@ public class RouteControllerUnitTests {
 
   @Test
   public void indexTest() {
-    String expectedResult = "Welcome, in order to make an API call direct your browser or " +
-        "Postman to an endpoint \n\n This can be done using the following format: \n\n http:127.0.0"
-        + ".1:8080/endpoint?arg=value";
+    String expectedResult = "Welcome, in order to make an API call direct your browser or "
+        + "Postman to an endpoint \n\n This can be done using the following format: \n\n http:127"
+        + ".0.0.1:8080/endpoint?arg=value";
     assertEquals(expectedResult, testRouteController.index());
   }
 
@@ -74,17 +74,21 @@ public class RouteControllerUnitTests {
   @Test
   public void findCourseLocationTest() {
     HttpStatus expectedResult = HttpStatus.NOT_FOUND;
-    assertEquals(expectedResult, testRouteController.findCourseLocation("COMS", 104).getStatusCode());
+    assertEquals(expectedResult,
+        testRouteController.findCourseLocation("COMS", 104).getStatusCode());
     expectedResult = HttpStatus.OK;
-    assertEquals(expectedResult, testRouteController.findCourseLocation("COMS", 1004).getStatusCode());
+    assertEquals(expectedResult,
+        testRouteController.findCourseLocation("COMS", 1004).getStatusCode());
   }
 
   @Test
   public void findCourseInstructorTest() {
     HttpStatus expectedResult = HttpStatus.NOT_FOUND;
-    assertEquals(expectedResult, testRouteController.findCourseInstructor("COMS", 104).getStatusCode());
+    assertEquals(expectedResult,
+        testRouteController.findCourseInstructor("COMS", 104).getStatusCode());
     expectedResult = HttpStatus.OK;
-    assertEquals(expectedResult, testRouteController.findCourseInstructor("COMS", 1004).getStatusCode());
+    assertEquals(expectedResult,
+        testRouteController.findCourseInstructor("COMS", 1004).getStatusCode());
   }
 
   @Test
@@ -113,9 +117,9 @@ public class RouteControllerUnitTests {
 
   @Test
   public void dropStudentTest() {
-    HashMap<String, Department> departmentMapping;
+    Map<String, Department> departmentMapping;
     departmentMapping = IndividualProjectApplication.myFileDatabase.getDepartmentMapping();
-    HashMap<String, Course> coursesMapping;
+    Map<String, Course> coursesMapping;
     coursesMapping = departmentMapping.get("COMS").getCourseSelection();
     Course requestedCourse = coursesMapping.get(Integer.toString(1004));
 
